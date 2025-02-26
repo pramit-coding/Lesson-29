@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1 id="h1">Classes in <b><u id="underline">Javascript</u></b></h1>
+    <p>
+    <blockquote>Today we will learn about <mark>Classes in Javascript</mark></blockquote>
+    </p>
+    <p><b id="bold">Activity </b></p>
+    <style>
+        body {
+            background-color: aqua;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        blockquote {
+            background-color: aquamarine;
+        }
+
+        mark {
+            background-color: orange;
+            color: cyan
+        }
+
+        #bold {
+            font-weight: bold;
+            font-style: unset;
+        }
+
+        #underline {
+            font-style: italic;
+            font-size: x-large;
+        }
+
+        #h1 {
+            background-color: coral;
+            font-weight: 400;
+            color: aquamarine;
+        }
+    </style>
+    <p id="demo"></p>
+   
+    <input id="ID" type="number" min="10" max="50" required>
+    <button onclick="myFunction()">Click</button>
+    <script>
+        function myFunction(){
+            var one= document.getElementById("ID");
+if(!one.checkValidity()){
+    document.getElementById("demo").innerHTML= one.validationMessage;
+    
+}
+else{document.getElementById("demo").innerHTML= "Everythoing is Okay" + "Yay"
+        }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
